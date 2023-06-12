@@ -3,7 +3,7 @@ import { GlobalContext } from '../context/GlobalState';
 import { Transaction } from './Transaction';
 
 export const TransactionList = () => {
-  const { transactions } = useContext(GlobalContext);
+  const { transactions, deleteTransaction } = useContext(GlobalContext);
 
   return (
     <>
@@ -14,6 +14,7 @@ export const TransactionList = () => {
             text={transaction.text}
             key={transaction.id}
             amount={transaction.amount}
+            deleteTransaction={() => deleteTransaction(transaction.id)}
           />
         ))}
       </ul>
