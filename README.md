@@ -1,6 +1,6 @@
 # Expense Tracker
 
-## Live Demo [here]()
+## Live Demo [here](https://geofarl.github.io/expense-tracker/)
 
 ![picture](./src/assets/main-view.png)
 
